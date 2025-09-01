@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagens Jovens - Explore o Mundo!</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      background: #f8f5ff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #7b2ff7, #9f5cff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      background: #6a1b9a;
+      text-align: center;
+      padding: 12px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #6a1b9a;
+      margin-bottom: 20px;
+    }
+    .destinos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      color: #7b2ff7;
+      margin: 15px 0 5px;
+    }
+    .card p {
+      padding: 0 10px 15px;
+      font-size: 0.95em;
+    }
+    .contato {
+      background: #ede7f6;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    .contato input, .contato textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1em;
+    }
+    .contato button {
+      background: #7b2ff7;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contato button:hover {
+      background: #9f5cff;
+    }
+    footer {
+      background: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Viagens Jovens ✈️🌍</h1>
+    <p>Descubra, explore e viva experiências únicas!</p>
+  </header>
+
+  <nav>
+    <a href="#destinos">Destinos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="destinos">
+    <h2>Destinos Incríveis</h2>
+    <div class="destinos">
+      <div class="card">
+        <img src="https://picsum.photos/300/200?random=10" alt="Barcelona">
+        <h3>Barcelona</h3>
+        <p>Arte, praia, vida noturna e uma energia jovem inesquecível!</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/300/200?random=11" alt="Tóquio">
+        <h3>Tóquio</h3>
+        <p>Tradição e modernidade misturadas numa cidade cheia de luzes.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/300/200?random=12" alt="Florianópolis">
+        <h3>Florianópolis</h3>
+        <p>Praias paradisíacas, baladas e aventuras radicais no sul do Brasil.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+      Somos a <strong>Viagens Jovens</strong>, uma agência feita para quem busca liberdade, 
+      aventura e experiências autênticas pelo mundo. 
+      Aqui você encontra pacotes acessíveis e pensados para jovens exploradores! 🚀
+    </p>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <div class="contato">
+      <form>
+        <input type="text" placeholder="Seu Nome" required><br>
+        <input type="email" placeholder="Seu Email" required><br>
+        <textarea rows="4" placeholder="Sua mensagem"></textarea><br>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Viagens Jovens - Todos os direitos reservados 💜</p>
+  </footer>
+
+</body>
+</html>

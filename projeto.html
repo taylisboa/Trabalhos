@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens - Mundo Afora</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #0284c7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #0369a1;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80") no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px #000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        .destinos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #0369a1;
+        }
+
+        .card p {
+            padding: 0 10px 15px;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #0369a1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mundo Afora - Agência de Viagens</h1>
+        <p>Realize sua viagem dos sonhos com a gente!</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Destinos</a>
+        <a href="#">Promoções</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <div class="banner">
+        Explore o mundo com conforto e segurança!
+    </div>
+
+    <div class="container">
+        <h2>Destinos mais procurados</h2>
+        <div class="destinos">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80" alt="Paris">
+                <h3>Paris, França</h3>
+                <p>Conheça a cidade do amor e visite pontos turísticos como a Torre Eiffel e o Louvre.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Maldivas">
+                <h3>Maldivas</h3>
+                <p>Relaxe em praias paradisíacas com águas cristalinas e resorts de luxo inesquecíveis.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.americachip.com/wp-content/uploads/2020/04/o-que-fazer-em-nova-york.jpg?strip=all&lossy=1&quality=92&webp=92&resize=1020%2C608&ssl=1" alt="Nova York">
+                <h3>Nova York, EUA</h3>
+                <p>A cidade que nunca dorme espera por você com Broadway, Times Square e Central Park.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mundo Afora Viagens | Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
